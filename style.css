@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body{
+    background: linear-gradient(120deg, #3ec0b4, #d748f9);
+    min-height: 100vh;
+}
+
+header, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+}
+
+.website-name{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+form input, form button{
+    border: none;
+    padding: 0.4rem;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+}
+
+
+form button{
+    color: #d748f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background-color: #d748f9;
+    color: #ffffff;
+}
+
+
+.tasks{
+    display: flex;
+    justify-content: center;
+}
+
+.all-tasks{
+    list-style: none;
+    min-width: 30%;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.task-name{
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+.task-check,.task-remove{
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #940d57;
+    color: #ffffff;
+}
+
+.task-check{
+    background-color: #3ec0b4;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
